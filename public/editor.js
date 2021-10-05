@@ -1091,7 +1091,7 @@ function processCommands() {
 		
 		case 'print':
 			gfx.print(cmd.text);
-			codeImpl += indent + gfxClass + 'print(' + quotedC(cmd.text) + ');\n';
+			codeImpl += indent + gfxClass + 'ssd1306_WriteString(' + quotedC(cmd.text) + ');\n';
 			break;
 		
 		case 'println':
